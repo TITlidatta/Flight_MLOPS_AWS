@@ -1,0 +1,10 @@
+site_name: Flight Delay Prediction
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - Data Schema: data.md
+  - Training Pipeline: training.md
+  - Deployment: deployment.md
+
