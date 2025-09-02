@@ -9,20 +9,20 @@
       
       
       
+        <link rel="prev" href="..">
       
-        <link rel="next" href="deployment/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
     
     
       
-        <title>Flight Delay Prediction</title>
+        <title>Deployment - Flight Delay Prediction</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
       
       
 
@@ -41,7 +41,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#flight-delay-prediction-documentation" class="md-skip">
+        <a href="#overview" class="md-skip">
           Skip to content
         </a>
       
@@ -76,7 +76,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Flight Delay Prediction" class="md-header__button md-logo" aria-label="Flight Delay Prediction" data-md-component="logo">
+    <a href=".." title="Flight Delay Prediction" class="md-header__button md-logo" aria-label="Flight Delay Prediction" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Deployment
             
           </span>
         </div>
@@ -174,7 +174,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Flight Delay Prediction" class="md-nav__button md-logo" aria-label="Flight Delay Prediction" data-md-component="logo">
+    <a href=".." title="Flight Delay Prediction" class="md-nav__button md-logo" aria-label="Flight Delay Prediction" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -189,6 +189,28 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -198,15 +220,13 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
   
   <span class="md-ellipsis">
-    Home
+    Deployment
     
   </span>
   
@@ -214,12 +234,12 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="." class="md-nav__link md-nav__link--active">
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
-    Home
+    Deployment
     
   </span>
   
@@ -231,8 +251,6 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
-  
-    
   
   
     <label class="md-nav__title" for="__toc">
@@ -251,28 +269,55 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#expected-input-data" class="md-nav__link">
+  <a href="#architecture-components" class="md-nav__link">
     <span class="md-ellipsis">
-      Expected Input Data
+      Architecture Components
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Expected Input Data">
+    <nav class="md-nav" aria-label="Architecture Components">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#flightscsv" class="md-nav__link">
+  <a href="#1-s3-buckets" class="md-nav__link">
     <span class="md-ellipsis">
-      flights.csv
+      1. S3 Buckets
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#airportscsv" class="md-nav__link">
+  <a href="#2-model-training" class="md-nav__link">
     <span class="md-ellipsis">
-      airports.csv
+      2. Model Training
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-backend-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Backend Deployment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-version-control-and-cicd" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Version Control and CI/CD
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-external-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. External API
     </span>
   </a>
   
@@ -284,9 +329,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pipeline-steps" class="md-nav__link">
+  <a href="#workflow-summary" class="md-nav__link">
     <span class="md-ellipsis">
-      Pipeline Steps
+      Workflow Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Benefits
     </span>
   </a>
   
@@ -296,28 +350,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="deployment/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Deployment
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -339,8 +371,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -358,28 +388,55 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#expected-input-data" class="md-nav__link">
+  <a href="#architecture-components" class="md-nav__link">
     <span class="md-ellipsis">
-      Expected Input Data
+      Architecture Components
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Expected Input Data">
+    <nav class="md-nav" aria-label="Architecture Components">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#flightscsv" class="md-nav__link">
+  <a href="#1-s3-buckets" class="md-nav__link">
     <span class="md-ellipsis">
-      flights.csv
+      1. S3 Buckets
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#airportscsv" class="md-nav__link">
+  <a href="#2-model-training" class="md-nav__link">
     <span class="md-ellipsis">
-      airports.csv
+      2. Model Training
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-backend-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Backend Deployment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-version-control-and-cicd" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Version Control and CI/CD
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-external-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. External API
     </span>
   </a>
   
@@ -391,9 +448,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pipeline-steps" class="md-nav__link">
+  <a href="#workflow-summary" class="md-nav__link">
     <span class="md-ellipsis">
-      Pipeline Steps
+      Workflow Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Benefits
     </span>
   </a>
   
@@ -415,51 +481,123 @@
 
 
 
-<h1 id="flight-delay-prediction-documentation">Flight Delay Prediction - Documentation</h1>
+  <h1>Deployment</h1>
+
 <h2 id="overview">Overview</h2>
-<p>This project implements a machine learning pipeline for predicting flight delays using AWS SageMaker.</p>
-<p>The script <code>data_pipeline_npn.py</code>:
-- Loads flight &amp; airport data from S3
-- Cleans and preprocesses data
-- Trains a RandomForest classifier
-- Saves model (<code>model.pkl</code>) for backend
-- Logs accuracy (<code>latest.txt</code>) to S3</p>
+<p>This document explains the architecture and deployment workflow of the <strong>Flight Delay Prediction System</strong>. The system integrates <strong>AWS S3</strong>, <strong>Amazon ECS</strong>, <strong>Docker Hub</strong>, <strong>GitHub</strong>, and external data sources such as the <strong>Aviation Stack API</strong>. It supports continuous integration (CI) and continuous delivery (CD), ensuring reliable retraining and deployment of ML models.</p>
 <hr />
-<h2 id="expected-input-data">Expected Input Data</h2>
-<h3 id="flightscsv">flights.csv</h3>
+<h2 id="architecture-components">Architecture Components</h2>
+<h3 id="1-s3-buckets">1. <strong>S3 Buckets</strong></h3>
 <ul>
-<li>YEAR: Year of flight (int)</li>
-<li>MONTH: Month (1–12)</li>
-<li>DAY: Day of month (1–31)</li>
-<li>DAY_OF_WEEK: 1 = Monday, …, 7 = Sunday</li>
-<li>AIRLINE: Airline code (string, e.g., "AA", "UA")</li>
-<li>FLIGHT_NUMBER: Flight number (int)</li>
-<li>TAIL_NUMBER: Aircraft identifier (string)</li>
-<li>ORIGIN_AIRPORT, DESTINATION_AIRPORT: 3-letter codes</li>
-<li>SCHEDULED_DEPARTURE, ARRIVAL_TIME, etc. (HHMM format → converted to minutes)</li>
-<li>ARRIVAL_DELAY: Target variable (minutes; later converted into binary class)</li>
+<li><strong>S3: MODELS</strong></li>
+<li>Central storage for all models.</li>
+<li>
+<p>Contains:</p>
+<ul>
+<li><strong>S3: PROD</strong> → Latest live model version currently serving predictions.</li>
+<li><strong>S3: STAGING</strong> → Latest trained model pending evaluation.</li>
+<li><strong>Latest.txt</strong> → Keeps track of the key for the latest live model, useful for rollbacks.</li>
 </ul>
-<h3 id="airportscsv">airports.csv</h3>
-<ul>
-<li>IATA_CODE: 3-letter code</li>
-<li>CITY, STATE: Location metadata</li>
-<li>LATITUDE, LONGITUDE: Coordinates</li>
+</li>
+<li>
+<p><strong>S3: DATA</strong></p>
+</li>
+<li>Stores datasets used for training and evaluation.</li>
+<li>Sub-buckets:<ul>
+<li><strong>S3: TRAINING DATA</strong> → Historical training datasets used for model training.</li>
+<li><strong>S3: NEW DATA</strong> → Fresh data fetched daily from the Aviation Stack API. This is used for model evaluation and accuracy measurement.</li>
+</ul>
+</li>
 </ul>
 <hr />
-<h2 id="pipeline-steps">Pipeline Steps</h2>
+<h3 id="2-model-training">2. <strong>Model Training</strong></h3>
+<ul>
+<li><strong>Google Colab / SageMaker (Training Environment)</strong></li>
+<li>Fetches training data from <strong>S3: TRAINING DATA</strong> using <strong>boto3</strong>.</li>
+<li>Performs:<ul>
+<li>Data preprocessing and cleaning.</li>
+<li>Model training (Random Forest, Logistic Regression, etc.).</li>
+<li>Model testing and evaluation.</li>
+</ul>
+</li>
+<li>After training:<ul>
+<li>Model is pushed to <strong>S3: STAGING</strong>.</li>
+<li>Evaluation metrics (accuracy, F1-score) are logged.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3 id="3-backend-deployment">3. <strong>Backend Deployment</strong></h3>
+<ul>
+<li><strong>Amazon ECS (Elastic Container Service)</strong></li>
+<li>Hosts backend services (APIs) inside Docker containers.</li>
+<li>ECS loads the <strong>latest backend Docker image</strong> from Docker Hub and serves it via a public URL.</li>
+<li>
+<p>Backend API integrates with S3 to fetch the <strong>latest model version</strong> and serve real-time predictions.</p>
+</li>
+<li>
+<p><strong>Docker Hub</strong></p>
+</li>
+<li>Stores multiple versions of backend Docker images.</li>
+<li>Every backend update (after code push) is dockerized and uploaded here.</li>
+</ul>
+<hr />
+<h3 id="4-version-control-and-cicd">4. <strong>Version Control and CI/CD</strong></h3>
+<ul>
+<li><strong>GitHub</strong></li>
+<li>Developers push code into their branches.</li>
+<li>
+<p>CI/CD pipeline triggers:</p>
+<ul>
+<li>Backend and frontend code validation.</li>
+<li>Dockerization of updated code.</li>
+<li>Upload of new Docker image to <strong>Docker Hub</strong>.</li>
+<li>ECS automatically fetches updated image for deployment.</li>
+</ul>
+</li>
+<li>
+<p><strong>Backend Code Responsibilities</strong></p>
+</li>
+<li><strong>Model Loader</strong> → Loads latest model from S3 (using key in <code>latest.txt</code>).</li>
+<li><strong>Daily Data Fetcher</strong> → Fetches new data daily via Aviation Stack API and pushes it to <strong>S3: NEW DATA</strong>.</li>
+<li><strong>Evaluator</strong> → Runs model tests on <strong>S3: NEW DATA</strong>.  <ul>
+<li>If accuracy &gt; threshold → promotes model from <strong>STAGING</strong> to <strong>PROD</strong> and updates <code>latest.txt</code>.</li>
+<li>If accuracy &lt; threshold → rejects promotion, PROD remains unchanged.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3 id="5-external-api">5. <strong>External API</strong></h3>
+<ul>
+<li><strong>Aviation Stack API</strong></li>
+<li>Provides fresh daily flight data.</li>
+<li>Integrated in backend service to:<ul>
+<li>Fetch daily data.</li>
+<li>Update <strong>S3: NEW DATA</strong> for accuracy measurement.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="workflow-summary">Workflow Summary</h2>
 <ol>
-<li>Data loading from S3</li>
-<li>Cleaning irrelevant columns</li>
-<li>Time feature engineering (HHMM → minutes since midnight)</li>
-<li>Encoding categorical features</li>
-<li>Train/test split</li>
-<li>Missing value imputation (KNN &amp; median)</li>
-<li>Scaling (Robust + Standard)</li>
-<li>Model training (RandomForestClassifier)</li>
-<li>Outputs:</li>
-<li><code>/opt/ml/model/model.pkl</code> (inside SageMaker model.tar.gz)</li>
-<li><code>s3://model-npn/latest.txt</code> (accuracy log)</li>
+<li>Training data stored in <strong>S3: TRAINING DATA</strong> is used to train models in Colab/SageMaker.  </li>
+<li>Trained models are uploaded to <strong>S3: STAGING</strong>.  </li>
+<li>Backend fetches daily flight data via <strong>Aviation Stack API</strong> and saves it to <strong>S3: NEW DATA</strong>.  </li>
+<li>Model in <strong>STAGING</strong> is tested on <strong>NEW DATA</strong>.  </li>
+<li>If accuracy ≥ threshold → promoted to <strong>PROD</strong>, <code>latest.txt</code> updated.  </li>
+<li>If not → rejected.  </li>
+<li>Backend hosted on <strong>ECS</strong> always loads the PROD model key from <strong>latest.txt</strong> and serves predictions.  </li>
+<li>Developer code updates go to <strong>GitHub</strong>, triggering Docker builds → Docker Hub → ECS deployment.  </li>
 </ol>
+<hr />
+<h2 id="key-benefits">Key Benefits</h2>
+<ul>
+<li><strong>Rollback Capability</strong> → <code>latest.txt</code> ensures quick switch to a stable model.  </li>
+<li><strong>Scalable Design</strong> → Data on S3, compute via ECS, training via SageMaker/Colab.  </li>
+<li><strong>Automated CI/CD</strong> → Code and models continuously updated without manual intervention.  </li>
+<li><strong>Clear Separation</strong> → Training, staging, and production environments isolated for safety.<br />
+"""</li>
+</ul>
 
 
 
@@ -508,10 +646,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   </body>
